@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="text-8xl font-black">EYEVY</div>
           <div className="text-4xl ">Watch... Monitor.. Alert!</div>
           <div className="text-2xl font-light">
-            Works by <span className="font-bold">Watchiko</span>
+            Works with <span className="font-black text-4xl">Watchiko</span>
           </div>
           <div className="mt-4"></div>
           <Link href={"/login"}>
