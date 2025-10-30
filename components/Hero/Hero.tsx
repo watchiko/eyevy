@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="px-4 py-8 flex w-full h-auto items-center justify-center bg-black text-white">
         <div className=" flex flex-col gap-4 items-center ">
           <div className="text-8xl font-black">EYEVY</div>
-          <div className="text-4xl ">Watch? Monitor. Alert!</div>
+          <div className="text-4xl ">Watch... Monitor.. Alert!</div>
           <div className="text-2xl font-light">
             Works by <span className="font-bold">Watchiko</span>
           </div>
