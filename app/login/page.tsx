@@ -35,9 +35,9 @@ export default function Login() {
         <div className="flex flex-col items-center justify-center flex-1">
           <form
             onSubmit={doLogin}
-            className="p-8 gap-4 border border-gray-200 flex flex-col rounded shadow-2xl w-1/2"
+            className="p-8 gap-4 border border-gray-200 flex flex-col rounded shadow-2xl min-w-[400px] max-w-lg"
           >
-            <div>
+            <div className="flex flex-col gap-2">
               <label htmlFor="email" className="block">
                 Email
               </label>
@@ -50,7 +50,7 @@ export default function Login() {
                 required
               />
             </div>
-            <div>
+            <div className="flex flex-col gap-2">
               <label htmlFor="password" className="block">
                 Password
               </label>

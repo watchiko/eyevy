@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="text-black p-8 font-sans leading-loose">
+      <div className="bg-transparent text-black p-8 font-sans leading-loose">
         <div className="mb-8">
           <h1 className="text-2xl">Watchiko</h1>
           <p className="text-lg">
