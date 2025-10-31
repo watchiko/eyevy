@@ -5,17 +5,24 @@ export default function Home() {
     <>
       <Hero />
       <div className="bg-transparent text-black p-8 font-sans leading-loose">
-        <div className="mb-8">
-          <h1 className="text-2xl">Watchiko</h1>
+        <div className="mb-8 min-h-[50vh] flex flex-col justify-center max-w-[50vw]">
+          <h1 className="text-2xl">Eyevy</h1>
           <p className="text-lg">
-            Watchiko is a real-time activity monitoring and reporting system designed for
-            personally-owned computer systems. It helps users gain insight into their own system
-            usage patterns, device events, and local activity — all while respecting privacy and
-            ethical boundaries.
+            Helps you track system events on a as-live-and-immediate-as-possible kind of approach.
+            Eyevy's backbone is Evstore Hub, a cloud repository storing your system events. Eyevy
+            and Evstore are part of the broader ecosystem, Watchiko.
           </p>
         </div>
-        <div className="mb-8">
-          <h1 className="text-2xl">🎯 Purpose</h1>
+        <div className="mb-8 min-h-[50vh] flex flex-col justify-center max-w-[50vw]">
+          <h1 className="text-2xl">Watchiko</h1>
+          <p className="text-lg">
+            A real-time activity monitoring and reporting system designed for personally-owned
+            computer systems. It helps users gain insight into their own system usage patterns,
+            device events, and local activity — all while respecting privacy and ethical boundaries.
+          </p>
+        </div>
+        <div className="mb-8 min-h-[50vh] flex flex-col justify-center max-w-[50vw]">
+          <h1 className="text-2xl">Purpose</h1>
           <p className="text-lg">
             Watchiko is built for personal digital forensics with a live-first mindset. It doesn't
             just log what happened — it alerts you as soon as something happens.
@@ -35,8 +42,8 @@ export default function Home() {
             something matters.
           </p>
         </div>
-        <div className="mb-8">
-          <h1 className="text-2xl">🧩 System Overview</h1>
+        <div className="mb-8 min-h-[50vh] flex flex-col justify-center max-w-[50vw]">
+          <h1 className="text-2xl">System Overview</h1>
           <p className="text-lg">Watchiko is built as a modular four-tier system:</p>
 
           <ul className="list-disc pl-4 text-lg list-inside">
@@ -58,8 +65,8 @@ export default function Home() {
             </li>
           </ul>
         </div>
-        <div className="mb-8">
-          <h1 className="text-2xl">🧠 Philosophy</h1>
+        <div className="mb-8 min-h-[50vh] flex flex-col justify-center max-w-[50vw]">
+          <h1 className="text-2xl">Philosophy</h1>
           <p className="text-lg">Watchiko is built with a strong emphasis on:</p>
           <ul className="list-disc pl-4 text-lg list-inside">
             <li>Transparency: Users know exactly what is being tracked</li>
@@ -78,74 +85,6 @@ export default function Home() {
             <li>
               Live-ness: Alerts are generated as soon as events are detected — not hours later
             </li>
-          </ul>
-        </div>
-        <div className="mb-8">
-          <h1 className="text-2xl">📂 Event Hook Architecture</h1>
-          <p className="text-lg">
-            An Event Hook is a custom module used to detect specific type of event and provide to
-            Daemon.
-          </p>
-          <p className="text-lg">Each event hook module consists of:</p>
-          <ul className="list-disc pl-4 text-lg list-inside">
-            <li>./&lt;hookName&gt;/src/main.rs: Logic of the hook written in Rust</li>
-            <li>./&lt;hookName&gt;/Cargo.toml: Dependencies required by the hook</li>
-          </ul>
-          <p className="text-lg">These modules are stored in the hooks/internal folder</p>
-          <p className="text-lg">
-            The final compiled hook will be generated in ./dist/internal folder as
-            &lt;hookName&gt;/&lt;hookName&gt;.exe (in case of Windows binary)
-          </p>
-          <p className="text-lg">
-            Users can author their own hooks using the provided template and placed in the
-            hooks/custom folder
-          </p>
-        </div>
-        <div className="mb-8">
-          <h1 className="text-2xl">⚠️ Ethical Usage Warning</h1>
-          <p className="text-lg">
-            Watchiko is not spyware. It is not intended for surveillance or unauthorized monitoring
-            of other users.
-          </p>
-
-          <p className="text-lg">❌ Watchiko does not support:</p>
-          <ul className="list-disc pl-4 text-lg list-inside">
-            <li>Recording webcam feeds</li>
-            <li>Capturing audio sources</li>
-            <li>Taking random screenshots</li>
-            <li>Streaming live screencasts</li>
-          </ul>
-          <p className="text-lg">
-            These features are not intented in the design and purpose of Watchiko.
-          </p>
-
-          <p className="text-lg">✅ Watchiko is intended only for:</p>
-          <ul className="list-disc pl-4 text-lg list-inside">
-            <li>Monitoring your own device activity</li>
-            <li>Tracking system events (e.g., USB insert/remove)</li>
-            <li>Logging and analyzing usage patterns on your personal machine</li>
-          </ul>
-        </div>
-        <div className="mb-8">
-          <h1 className="text-2xl">📜 Legal Disclaimer</h1>
-          <p className="text-lg">
-            The software must only be installed and used on systems personally owned and operated by
-            the user.
-          </p>
-
-          <p className="text-lg">
-            By installing and using Watchiko, you acknowledge and agree to the following:
-          </p>
-          <ul className="list-disc pl-4 text-lg list-inside">
-            <li>You will use Watchiko only on systems you personally own and operate.</li>
-            <li>
-              You will not use Watchiko to monitor other individuals without their knowledge or
-              consent.
-            </li>
-            <li>
-              You understand that misuse of this software may violate local laws and regulations.
-            </li>
-            <li>You accept full responsibility for how Watchiko is used on your system.</li>
           </ul>
         </div>
       </div>
