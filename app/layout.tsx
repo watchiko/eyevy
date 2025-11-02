@@ -13,7 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eyevy",
+  title: {
+    default: "Eyevy",
+    template: "%s | Eyevy"
+  },
   description: "Eyevy for Watchiko",
 };
 
