@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  try {
+  // try {
     const { GOOGLE_CLIENT_ID, GOOGLE_REDIRECT_URI } = process.env;
 
     if (!GOOGLE_CLIENT_ID || !GOOGLE_REDIRECT_URI) {
@@ -22,8 +22,8 @@ export async function GET() {
     return NextResponse.redirect(
       `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`
     );
-  } catch (err: any) {
-    console.error("Login route error:", err);
-    return NextResponse.json({ error: err.message }, { status: 500 });
-  }
+  // } catch (err: any) {
+  //   console.error("Login route error:", err);
+  //   return NextResponse.json({ error: err.message }, { status: 500 });
+  // }
 }
