@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="mb-8"></div>
         </div>
         <div className="text-normal font-light font-serif">
-          With ♡ <span className="font-black">Watchiko</span>
+          With ♡ <span className="font-black"><a href="https://watchiko.vercel.app" target="_blank">Watchiko</a></span>
         </div>
       </div>
     </>
