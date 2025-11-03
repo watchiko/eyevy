@@ -3,20 +3,23 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <div className="px-4 py-8 flex-1 flex flex-col w-full h-auto items-center justify-between bg-black text-white shadow-2xl">
-        <div className=" flex flex-col gap-4 items-center leading-loose flex-1 justify-center">
-          <div className="text-8xl font-black">EYEVY</div>
-          <div className="text-4xl ">Watch... Monitor.. Alert!</div>
-          <div className="mt-4"></div>
-          <Link href={"/api/auth/login"}>
-            <button className="bg-blue-500 text-white text-2xl py-4 px-16 rounded cursor-pointer">
-              Login with Google
-            </button>
-          </Link>
+      <div className="px-4 py-8 flex-1 flex flex-col w-full items-center justify-between bg-black text-white shadow-2xl">
+        <div className=" flex flex-col gap-8 items-center leading-loose flex-1 justify-center">
+          <div className="flex-1 flex flex-col items-center justify-center gap-8">
+            <div className="text-6xl sm:text-8xl font-black font-serif tracking-tighter">eyevy</div>
+            <div className="text-xl font-serif">Watch. Monitor. Alert.</div>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <Link href={"/api/auth/login"}>
+              <button className="bg-blue-500 text-white text-2xl py-4 px-16 rounded cursor-pointer font-sans">
+                Login with Google
+              </button>
+            </Link>
+          </div>
           <div className="mb-8"></div>
         </div>
         <div className="text-normal font-light">
-          From the developers of <span className="font-black">Watchiko</span>
+          With ♡ <span className="font-serif font-extrabold">Watchiko</span>
         </div>
       </div>
     </>

@@ -8,5 +8,5 @@ export default async function O() {
     redirect("/api/auth/login");
   }
   const user = JSON.parse(Buffer.from(raw, "base64").toString("utf8"));
-  return <div className="text-black">Signed in as {user.email}</div>;
+  return <div className="text-black font-serif p-4">Hello {user.email}, <br /><br />This application is under development and is not yet ready to be used at the moment. <br />Kindly revisit during beta testing phase once you get notified. <br /><br />Regards, <br />Administrator.</div>;
 }
