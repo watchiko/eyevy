@@ -11,7 +11,7 @@ export default function Home() {
       <div className="h-screen flex flex-col">
         <Hero />
       </div>
-      <div className="bg-neutral-900 text-white p-8 font-sans">
+      <div className="bg-neutral-900 text-white p-8 font-sans select-none">
         <div className="mx-auto text-center">
           <div className="my-16 flex flex-col justify-center">
             <h1 className="text-4xl mb-4 font-serif">Eyevy</h1>
