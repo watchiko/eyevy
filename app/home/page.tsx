@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 
 export const metadata = {
@@ -42,9 +43,7 @@ export default function Home() {
         </div>
       </div>
       <div className="py-4 flex flex-col justify-center items-center bg-black text-white">
-        <p className="text-lg leading-loose tracking-normal">
-          &copy; 2025 Watchiko. All rights reserverd.
-        </p>
+        <Footer />
       </div>
     </>
   );

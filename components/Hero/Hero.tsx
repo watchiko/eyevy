@@ -18,8 +18,8 @@ export default function Hero() {
           </div>
           <div className="mb-8"></div>
         </div>
-        <div className="text-normal font-light">
-          With ♡ <span className="font-serif font-extrabold">Watchiko</span>
+        <div className="text-normal font-light font-serif">
+          With ♡ <span className="font-black">Watchiko</span>
         </div>
       </div>
     </>
